@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB131B9C15B69F7100ED922D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB131B9B15B69F7100ED922D /* UIKit.framework */; };
+		EB131B9E15B69F7100ED922D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB131B9D15B69F7100ED922D /* Foundation.framework */; };
+		EB131BA015B69F7100ED922D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB131B9F15B69F7100ED922D /* CoreGraphics.framework */; };
+		EB131BA615B69F7100ED922D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB131BA415B69F7100ED922D /* InfoPlist.strings */; };
+		EB131BA815B69F7100ED922D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB131BA715B69F7100ED922D /* main.m */; };
+		EB131BAC15B69F7100ED922D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB131BAB15B69F7100ED922D /* AppDelegate.m */; };
+		EB131BAF15B69F7100ED922D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB131BAE15B69F7100ED922D /* ViewController.m */; };
+		EB131BB215B69F7100ED922D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB131BB015B69F7100ED922D /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB131B9715B69F7100ED922D /* MovieTut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieTut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB131B9B15B69F7100ED922D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB131B9D15B69F7100ED922D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB131B9F15B69F7100ED922D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB131BA315B69F7100ED922D /* MovieTut-Info.plist */ = {isa = PBXFileReference; path = "MovieTut-Info.plist"; sourceTree = "<group>"; };
+		EB131BA515B69F7100ED922D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB131BA715B69F7100ED922D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB131BA915B69F7100ED922D /* MovieTut-Prefix.pch */ = {isa = PBXFileReference; path = "MovieTut-Prefix.pch"; sourceTree = "<group>"; };
+		EB131BAA15B69F7100ED922D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB131BAB15B69F7100ED922D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB131BAD15B69F7100ED922D /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		EB131BAE15B69F7100ED922D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EB131BB115B69F7100ED922D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB131B9415B69F7100ED922D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB131B9C15B69F7100ED922D /* UIKit.framework in Frameworks */,
+				EB131B9E15B69F7100ED922D /* Foundation.framework in Frameworks */,
+				EB131BA015B69F7100ED922D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB131B8C15B69F7000ED922D = {
+			isa = PBXGroup;
+			children = (
+				EB131BA115B69F7100ED922D /* MovieTut */,
+				EB131B9A15B69F7100ED922D /* Frameworks */,
+				EB131B9815B69F7100ED922D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB131B9815B69F7100ED922D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB131B9715B69F7100ED922D /* MovieTut.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB131B9A15B69F7100ED922D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB131B9B15B69F7100ED922D /* UIKit.framework */,
+				EB131B9D15B69F7100ED922D /* Foundation.framework */,
+				EB131B9F15B69F7100ED922D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB131BA115B69F7100ED922D /* MovieTut */ = {
+			isa = PBXGroup;
+			children = (
+				EB131BAA15B69F7100ED922D /* AppDelegate.h */,
+				EB131BAB15B69F7100ED922D /* AppDelegate.m */,
+				EB131BAD15B69F7100ED922D /* ViewController.h */,
+				EB131BAE15B69F7100ED922D /* ViewController.m */,
+				EB131BB015B69F7100ED922D /* ViewController.xib */,
+				EB131BA215B69F7100ED922D /* Supporting Files */,
+			);
+			path = MovieTut;
+			sourceTree = "<group>";
+		};
+		EB131BA215B69F7100ED922D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB131BA315B69F7100ED922D /* MovieTut-Info.plist */,
+				EB131BA415B69F7100ED922D /* InfoPlist.strings */,
+				EB131BA715B69F7100ED922D /* main.m */,
+				EB131BA915B69F7100ED922D /* MovieTut-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB131B9615B69F7100ED922D /* MovieTut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB131BB515B69F7100ED922D /* Build configuration list for PBXNativeTarget "MovieTut" */;
+			buildPhases = (
+				EB131B9315B69F7100ED922D /* Sources */,
+				EB131B9415B69F7100ED922D /* Frameworks */,
+				EB131B9515B69F7100ED922D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieTut;
+			productName = MovieTut;
+			productReference = EB131B9715B69F7100ED922D /* MovieTut.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB131B8E15B69F7000ED922D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = EB131B9115B69F7000ED922D /* Build configuration list for PBXProject "MovieTut" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB131B8C15B69F7000ED922D;
+			productRefGroup = EB131B9815B69F7100ED922D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB131B9615B69F7100ED922D /* MovieTut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB131B9515B69F7100ED922D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB131BA615B69F7100ED922D /* InfoPlist.strings in Resources */,
+				EB131BB215B69F7100ED922D /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB131B9315B69F7100ED922D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB131BA815B69F7100ED922D /* main.m in Sources */,
+				EB131BAC15B69F7100ED922D /* AppDelegate.m in Sources */,
+				EB131BAF15B69F7100ED922D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB131BA415B69F7100ED922D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB131BA515B69F7100ED922D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB131BB015B69F7100ED922D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB131BB115B69F7100ED922D /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB131BB315B69F7100ED922D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB131BB415B69F7100ED922D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB131BB615B69F7100ED922D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovieTut/MovieTut-Prefix.pch";
+				INFOPLIST_FILE = "MovieTut/MovieTut-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB131BB715B69F7100ED922D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovieTut/MovieTut-Prefix.pch";
+				INFOPLIST_FILE = "MovieTut/MovieTut-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB131B9115B69F7000ED922D /* Build configuration list for PBXProject "MovieTut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB131BB315B69F7100ED922D /* Debug */,
+				EB131BB415B69F7100ED922D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB131BB515B69F7100ED922D /* Build configuration list for PBXNativeTarget "MovieTut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB131BB615B69F7100ED922D /* Debug */,
+				EB131BB715B69F7100ED922D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB131B8E15B69F7000ED922D /* Project object */;
+}
