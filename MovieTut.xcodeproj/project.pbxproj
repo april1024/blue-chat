@@ -15,6 +15,8 @@
 		EB131BAC15B69F7100ED922D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB131BAB15B69F7100ED922D /* AppDelegate.m */; };
 		EB131BAF15B69F7100ED922D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB131BAE15B69F7100ED922D /* ViewController.m */; };
 		EB131BB215B69F7100ED922D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB131BB015B69F7100ED922D /* ViewController.xib */; };
+		EB131BB915B69F8C00ED922D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB131BB815B69F8C00ED922D /* MediaPlayer.framework */; };
+		EB131BBB15B6A17C00ED922D /* IMG_1045.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EB131BBA15B6A17C00ED922D /* IMG_1045.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +24,17 @@
 		EB131B9B15B69F7100ED922D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB131B9D15B69F7100ED922D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB131B9F15B69F7100ED922D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EB131BA315B69F7100ED922D /* MovieTut-Info.plist */ = {isa = PBXFileReference; path = "MovieTut-Info.plist"; sourceTree = "<group>"; };
+		EB131BA315B69F7100ED922D /* MovieTut-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovieTut-Info.plist"; sourceTree = "<group>"; };
 		EB131BA515B69F7100ED922D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB131BA715B69F7100ED922D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EB131BA915B69F7100ED922D /* MovieTut-Prefix.pch */ = {isa = PBXFileReference; path = "MovieTut-Prefix.pch"; sourceTree = "<group>"; };
-		EB131BAA15B69F7100ED922D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB131BA915B69F7100ED922D /* MovieTut-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieTut-Prefix.pch"; sourceTree = "<group>"; };
+		EB131BAA15B69F7100ED922D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB131BAB15B69F7100ED922D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB131BAD15B69F7100ED922D /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		EB131BAD15B69F7100ED922D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EB131BAE15B69F7100ED922D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB131BB115B69F7100ED922D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		EB131BB815B69F8C00ED922D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EB131BBA15B6A17C00ED922D /* IMG_1045.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_1045.MOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB131BB915B69F8C00ED922D /* MediaPlayer.framework in Frameworks */,
 				EB131B9C15B69F7100ED922D /* UIKit.framework in Frameworks */,
 				EB131B9E15B69F7100ED922D /* Foundation.framework in Frameworks */,
 				EB131BA015B69F7100ED922D /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +55,7 @@
 		EB131B8C15B69F7000ED922D = {
 			isa = PBXGroup;
 			children = (
+				EB131BB815B69F8C00ED922D /* MediaPlayer.framework */,
 				EB131BA115B69F7100ED922D /* MovieTut */,
 				EB131B9A15B69F7100ED922D /* Frameworks */,
 				EB131B9815B69F7100ED922D /* Products */,
@@ -90,6 +96,7 @@
 		EB131BA215B69F7100ED922D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB131BBA15B6A17C00ED922D /* IMG_1045.MOV */,
 				EB131BA315B69F7100ED922D /* MovieTut-Info.plist */,
 				EB131BA415B69F7100ED922D /* InfoPlist.strings */,
 				EB131BA715B69F7100ED922D /* main.m */,
@@ -150,6 +157,7 @@
 			files = (
 				EB131BA615B69F7100ED922D /* InfoPlist.strings in Resources */,
 				EB131BB215B69F7100ED922D /* ViewController.xib in Resources */,
+				EB131BBB15B6A17C00ED922D /* IMG_1045.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
