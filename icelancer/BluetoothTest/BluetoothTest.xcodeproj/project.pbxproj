@@ -21,7 +21,6 @@
 		7611D4CB15B1C42100AE7EC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7611D4C915B1C42100AE7EC0 /* InfoPlist.strings */; };
 		7611D4CE15B1C42100AE7EC0 /* BluetoothTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7611D4CD15B1C42100AE7EC0 /* BluetoothTestTests.m */; };
 		7611D4D815B1C44400AE7EC0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7611D4D715B1C44400AE7EC0 /* GameKit.framework */; };
-		76D827B315BD7D2900A9995A /* 16 The Thorny One.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76D827B215BD7D2900A9995A /* 16 The Thorny One.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,19 +32,6 @@
 			remoteInfo = BluetoothTest;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		76D827AE15BD7CB700A9995A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = sample;
-			dstSubfolderSpec = 7;
-			files = (
-				76D827B315BD7D2900A9995A /* 16 The Thorny One.mp3 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7611D49E15B1C42100AE7EC0 /* BluetoothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,7 +167,6 @@
 				7611D49A15B1C42100AE7EC0 /* Sources */,
 				7611D49B15B1C42100AE7EC0 /* Frameworks */,
 				7611D49C15B1C42100AE7EC0 /* Resources */,
-				76D827AE15BD7CB700A9995A /* CopyFiles */,
 			);
 			buildRules = (
 			);
