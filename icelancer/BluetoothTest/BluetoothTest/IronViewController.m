@@ -94,6 +94,7 @@
 - (void)peerPickerController: (GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session 
 {
     peerSession = session;
+    [session setDataReceiveHandler:self withContext:nil];
     [picker dismiss];
 }
 
