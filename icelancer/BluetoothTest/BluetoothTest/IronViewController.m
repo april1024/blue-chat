@@ -93,7 +93,7 @@
 
 - (void)peerPickerController: (GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session 
 {
-
+    [picker dismiss];
 }
 
 @end
