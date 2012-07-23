@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
-@interface IronViewController : UIViewController
+@interface IronViewController : UIViewController {
+    GKSession *peerSession;
+}
 
+- (IBAction)sendData:(id)sender;
 @end

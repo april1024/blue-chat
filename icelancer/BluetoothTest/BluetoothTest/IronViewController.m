@@ -93,7 +93,34 @@
 
 - (void)peerPickerController: (GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session 
 {
+    peerSession = session;
     [picker dismiss];
+}
+
+- (IBAction)sendData:(id)sender
+{
+    [self sendMusic];
+}
+
+- (void) sendMusic
+{
+    NSInputStream *inputStream = [NSInputStream inputStreamWithFileAtPath:@"16 The Thorny One.mp3"];
+    [inputStream open];
+    
+    Byte buffer[2048];
+    while ([inputStream hasBytesAvailable])
+    {
+        int bytesRead = [inputStream read:buffer maxLength:2048];
+        NSData *myData = [NSData dataWithBytes:buffer length:bytesRead];
+        [peerSession sendDataToAllPeers:myData withDataMode:GKSendDataReliable error:nil];
+    }
+
+}
+
+- (void) receiveData:(NSData *)data fromPeer:(NSString *)peer inSession: (GKSession *)session context:(void *)context
+{
+    NSLog(@"received");
+
 }
 
 @end
