@@ -11,10 +11,12 @@
 @interface IronMessageTableCell : UITableViewCell
 {
     UIImageView *balloonView;
+    UIImageView *senderView;
     UILabel *label;
 }
 
 @property (strong, nonatomic) UILabel *label;
 @property (strong, nonatomic) UIImageView *balloonView;
+@property (strong, nonatomic) UIImageView *senderView;
 
 @end

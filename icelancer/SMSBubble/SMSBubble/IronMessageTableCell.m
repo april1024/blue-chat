@@ -10,13 +10,16 @@
 
 @implementation IronMessageTableCell
 
-@synthesize label, balloonView;
+@synthesize label, balloonView, senderView;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        senderView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        senderView.tag = 3;
+        
         balloonView = [[UIImageView alloc] initWithFrame:CGRectZero];
         balloonView.tag = 1;
         
@@ -31,6 +34,7 @@
             self.frame.size.width, self.frame.size.height)];
         message.tag = 0;
         
+        [message addSubview:senderView];
         [message addSubview:balloonView];
         [message addSubview:label];
         [self.contentView addSubview:message];
