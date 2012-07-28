@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		760C78BC15C3A90F00595DAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760C78BB15C3A90F00595DAD /* UIKit.framework */; };
+		760C78BE15C3A90F00595DAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760C78BD15C3A90F00595DAD /* Foundation.framework */; };
+		760C78C015C3A90F00595DAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760C78BF15C3A90F00595DAD /* CoreGraphics.framework */; };
+		760C78C615C3A90F00595DAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 760C78C415C3A90F00595DAD /* InfoPlist.strings */; };
+		760C78C815C3A90F00595DAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C78C715C3A90F00595DAD /* main.m */; };
+		760C78CC15C3A90F00595DAD /* IronAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C78CB15C3A90F00595DAD /* IronAppDelegate.m */; };
+		760C78CF15C3A90F00595DAD /* IronViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C78CE15C3A90F00595DAD /* IronViewController.m */; };
+		760C78D215C3A90F00595DAD /* IronViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760C78D015C3A90F00595DAD /* IronViewController.xib */; };
+		760C78DA15C3A90F00595DAD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760C78D915C3A90F00595DAD /* SenTestingKit.framework */; };
+		760C78DB15C3A90F00595DAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760C78BB15C3A90F00595DAD /* UIKit.framework */; };
+		760C78DC15C3A90F00595DAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760C78BD15C3A90F00595DAD /* Foundation.framework */; };
+		760C78E415C3A90F00595DAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 760C78E215C3A90F00595DAD /* InfoPlist.strings */; };
+		760C78E715C3A90F00595DAD /* SMSBubbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C78E615C3A90F00595DAD /* SMSBubbleTests.m */; };
+		760C78F615C3B8BB00595DAD /* IronMessageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C78F515C3B8BB00595DAD /* IronMessageTableCell.m */; };
+		760C78F915C3DDF600595DAD /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 760C78F715C3DDF600595DAD /* green.png */; };
+		760C78FA15C3DDF600595DAD /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 760C78F815C3DDF600595DAD /* grey.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		760C78DD15C3A90F00595DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 760C78AE15C3A90E00595DAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 760C78B615C3A90F00595DAD;
+			remoteInfo = SMSBubble;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		760C78B715C3A90F00595DAD /* SMSBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		760C78BB15C3A90F00595DAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		760C78BD15C3A90F00595DAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		760C78BF15C3A90F00595DAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		760C78C315C3A90F00595DAD /* SMSBubble-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SMSBubble-Info.plist"; sourceTree = "<group>"; };
+		760C78C515C3A90F00595DAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		760C78C715C3A90F00595DAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		760C78C915C3A90F00595DAD /* SMSBubble-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMSBubble-Prefix.pch"; sourceTree = "<group>"; };
+		760C78CA15C3A90F00595DAD /* IronAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IronAppDelegate.h; sourceTree = "<group>"; };
+		760C78CB15C3A90F00595DAD /* IronAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IronAppDelegate.m; sourceTree = "<group>"; };
+		760C78CD15C3A90F00595DAD /* IronViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IronViewController.h; sourceTree = "<group>"; };
+		760C78CE15C3A90F00595DAD /* IronViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IronViewController.m; sourceTree = "<group>"; };
+		760C78D115C3A90F00595DAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IronViewController.xib; sourceTree = "<group>"; };
+		760C78D815C3A90F00595DAD /* SMSBubbleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSBubbleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		760C78D915C3A90F00595DAD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		760C78E115C3A90F00595DAD /* SMSBubbleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SMSBubbleTests-Info.plist"; sourceTree = "<group>"; };
+		760C78E315C3A90F00595DAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		760C78E515C3A90F00595DAD /* SMSBubbleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSBubbleTests.h; sourceTree = "<group>"; };
+		760C78E615C3A90F00595DAD /* SMSBubbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSBubbleTests.m; sourceTree = "<group>"; };
+		760C78F415C3B8BB00595DAD /* IronMessageTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IronMessageTableCell.h; sourceTree = "<group>"; };
+		760C78F515C3B8BB00595DAD /* IronMessageTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IronMessageTableCell.m; sourceTree = "<group>"; };
+		760C78F715C3DDF600595DAD /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		760C78F815C3DDF600595DAD /* grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		760C78B415C3A90F00595DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760C78BC15C3A90F00595DAD /* UIKit.framework in Frameworks */,
+				760C78BE15C3A90F00595DAD /* Foundation.framework in Frameworks */,
+				760C78C015C3A90F00595DAD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760C78D415C3A90F00595DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760C78DA15C3A90F00595DAD /* SenTestingKit.framework in Frameworks */,
+				760C78DB15C3A90F00595DAD /* UIKit.framework in Frameworks */,
+				760C78DC15C3A90F00595DAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		760C78AC15C3A90E00595DAD = {
+			isa = PBXGroup;
+			children = (
+				760C78C115C3A90F00595DAD /* SMSBubble */,
+				760C78DF15C3A90F00595DAD /* SMSBubbleTests */,
+				760C78BA15C3A90F00595DAD /* Frameworks */,
+				760C78B815C3A90F00595DAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		760C78B815C3A90F00595DAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				760C78B715C3A90F00595DAD /* SMSBubble.app */,
+				760C78D815C3A90F00595DAD /* SMSBubbleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		760C78BA15C3A90F00595DAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				760C78BB15C3A90F00595DAD /* UIKit.framework */,
+				760C78BD15C3A90F00595DAD /* Foundation.framework */,
+				760C78BF15C3A90F00595DAD /* CoreGraphics.framework */,
+				760C78D915C3A90F00595DAD /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		760C78C115C3A90F00595DAD /* SMSBubble */ = {
+			isa = PBXGroup;
+			children = (
+				760C78F715C3DDF600595DAD /* green.png */,
+				760C78F815C3DDF600595DAD /* grey.png */,
+				760C78CA15C3A90F00595DAD /* IronAppDelegate.h */,
+				760C78CB15C3A90F00595DAD /* IronAppDelegate.m */,
+				760C78CD15C3A90F00595DAD /* IronViewController.h */,
+				760C78CE15C3A90F00595DAD /* IronViewController.m */,
+				760C78D015C3A90F00595DAD /* IronViewController.xib */,
+				760C78C215C3A90F00595DAD /* Supporting Files */,
+				760C78F415C3B8BB00595DAD /* IronMessageTableCell.h */,
+				760C78F515C3B8BB00595DAD /* IronMessageTableCell.m */,
+			);
+			path = SMSBubble;
+			sourceTree = "<group>";
+		};
+		760C78C215C3A90F00595DAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				760C78C315C3A90F00595DAD /* SMSBubble-Info.plist */,
+				760C78C415C3A90F00595DAD /* InfoPlist.strings */,
+				760C78C715C3A90F00595DAD /* main.m */,
+				760C78C915C3A90F00595DAD /* SMSBubble-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		760C78DF15C3A90F00595DAD /* SMSBubbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				760C78E515C3A90F00595DAD /* SMSBubbleTests.h */,
+				760C78E615C3A90F00595DAD /* SMSBubbleTests.m */,
+				760C78E015C3A90F00595DAD /* Supporting Files */,
+			);
+			path = SMSBubbleTests;
+			sourceTree = "<group>";
+		};
+		760C78E015C3A90F00595DAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				760C78E115C3A90F00595DAD /* SMSBubbleTests-Info.plist */,
+				760C78E215C3A90F00595DAD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		760C78B615C3A90F00595DAD /* SMSBubble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760C78EA15C3A90F00595DAD /* Build configuration list for PBXNativeTarget "SMSBubble" */;
+			buildPhases = (
+				760C78B315C3A90F00595DAD /* Sources */,
+				760C78B415C3A90F00595DAD /* Frameworks */,
+				760C78B515C3A90F00595DAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMSBubble;
+			productName = SMSBubble;
+			productReference = 760C78B715C3A90F00595DAD /* SMSBubble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		760C78D715C3A90F00595DAD /* SMSBubbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760C78ED15C3A90F00595DAD /* Build configuration list for PBXNativeTarget "SMSBubbleTests" */;
+			buildPhases = (
+				760C78D315C3A90F00595DAD /* Sources */,
+				760C78D415C3A90F00595DAD /* Frameworks */,
+				760C78D515C3A90F00595DAD /* Resources */,
+				760C78D615C3A90F00595DAD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				760C78DE15C3A90F00595DAD /* PBXTargetDependency */,
+			);
+			name = SMSBubbleTests;
+			productName = SMSBubbleTests;
+			productReference = 760C78D815C3A90F00595DAD /* SMSBubbleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		760C78AE15C3A90E00595DAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Iron;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "sendtoghkim@gmail.com";
+			};
+			buildConfigurationList = 760C78B115C3A90E00595DAD /* Build configuration list for PBXProject "SMSBubble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 760C78AC15C3A90E00595DAD;
+			productRefGroup = 760C78B815C3A90F00595DAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				760C78B615C3A90F00595DAD /* SMSBubble */,
+				760C78D715C3A90F00595DAD /* SMSBubbleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		760C78B515C3A90F00595DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760C78C615C3A90F00595DAD /* InfoPlist.strings in Resources */,
+				760C78D215C3A90F00595DAD /* IronViewController.xib in Resources */,
+				760C78F915C3DDF600595DAD /* green.png in Resources */,
+				760C78FA15C3DDF600595DAD /* grey.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760C78D515C3A90F00595DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760C78E415C3A90F00595DAD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		760C78D615C3A90F00595DAD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		760C78B315C3A90F00595DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760C78C815C3A90F00595DAD /* main.m in Sources */,
+				760C78CC15C3A90F00595DAD /* IronAppDelegate.m in Sources */,
+				760C78CF15C3A90F00595DAD /* IronViewController.m in Sources */,
+				760C78F615C3B8BB00595DAD /* IronMessageTableCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760C78D315C3A90F00595DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760C78E715C3A90F00595DAD /* SMSBubbleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		760C78DE15C3A90F00595DAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 760C78B615C3A90F00595DAD /* SMSBubble */;
+			targetProxy = 760C78DD15C3A90F00595DAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		760C78C415C3A90F00595DAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760C78C515C3A90F00595DAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		760C78D015C3A90F00595DAD /* IronViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760C78D115C3A90F00595DAD /* en */,
+			);
+			name = IronViewController.xib;
+			sourceTree = "<group>";
+		};
+		760C78E215C3A90F00595DAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760C78E315C3A90F00595DAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		760C78E815C3A90F00595DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		760C78E915C3A90F00595DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		760C78EB15C3A90F00595DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMSBubble/SMSBubble-Prefix.pch";
+				INFOPLIST_FILE = "SMSBubble/SMSBubble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		760C78EC15C3A90F00595DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMSBubble/SMSBubble-Prefix.pch";
+				INFOPLIST_FILE = "SMSBubble/SMSBubble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		760C78EE15C3A90F00595DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SMSBubble.app/SMSBubble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMSBubble/SMSBubble-Prefix.pch";
+				INFOPLIST_FILE = "SMSBubbleTests/SMSBubbleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		760C78EF15C3A90F00595DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SMSBubble.app/SMSBubble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMSBubble/SMSBubble-Prefix.pch";
+				INFOPLIST_FILE = "SMSBubbleTests/SMSBubbleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		760C78B115C3A90E00595DAD /* Build configuration list for PBXProject "SMSBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760C78E815C3A90F00595DAD /* Debug */,
+				760C78E915C3A90F00595DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		760C78EA15C3A90F00595DAD /* Build configuration list for PBXNativeTarget "SMSBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760C78EB15C3A90F00595DAD /* Debug */,
+				760C78EC15C3A90F00595DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		760C78ED15C3A90F00595DAD /* Build configuration list for PBXNativeTarget "SMSBubbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760C78EE15C3A90F00595DAD /* Debug */,
+				760C78EF15C3A90F00595DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 760C78AE15C3A90E00595DAD /* Project object */;
+}
