@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB82F34915C7718600FE7623 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82F34815C7718600FE7623 /* UIKit.framework */; };
+		EB82F34B15C7718600FE7623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82F34A15C7718600FE7623 /* Foundation.framework */; };
+		EB82F34D15C7718600FE7623 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82F34C15C7718600FE7623 /* CoreGraphics.framework */; };
+		EB82F35315C7718600FE7623 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB82F35115C7718600FE7623 /* InfoPlist.strings */; };
+		EB82F35515C7718600FE7623 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB82F35415C7718600FE7623 /* main.m */; };
+		EB82F35915C7718600FE7623 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB82F35815C7718600FE7623 /* AppDelegate.m */; };
+		EB82F35C15C7718600FE7623 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB82F35A15C7718600FE7623 /* MainStoryboard.storyboard */; };
+		EB82F37215C7718600FE7623 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82F37115C7718600FE7623 /* SenTestingKit.framework */; };
+		EB82F37315C7718600FE7623 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82F34815C7718600FE7623 /* UIKit.framework */; };
+		EB82F37415C7718600FE7623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82F34A15C7718600FE7623 /* Foundation.framework */; };
+		EB82F37C15C7718600FE7623 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB82F37A15C7718600FE7623 /* InfoPlist.strings */; };
+		EB82F37F15C7718600FE7623 /* BlueChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB82F37E15C7718600FE7623 /* BlueChatTests.m */; };
+		EB82F38A15C771CA00FE7623 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB82F38915C771CA00FE7623 /* MainViewController.m */; };
+		EB82F39C15C7734A00FE7623 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB82F39B15C7734A00FE7623 /* ConnectionViewController.m */; };
+		EB82F39F15C7738300FE7623 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB82F39E15C7738300FE7623 /* ListViewController.m */; };
+		EB82F3A215C7738B00FE7623 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB82F3A115C7738B00FE7623 /* SettingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB82F37515C7718600FE7623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB82F33B15C7718600FE7623 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB82F34315C7718600FE7623;
+			remoteInfo = BlueChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB82F34415C7718600FE7623 /* BlueChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB82F34815C7718600FE7623 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB82F34A15C7718600FE7623 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB82F34C15C7718600FE7623 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB82F35015C7718600FE7623 /* BlueChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueChat-Info.plist"; sourceTree = "<group>"; };
+		EB82F35215C7718600FE7623 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB82F35415C7718600FE7623 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB82F35615C7718600FE7623 /* BlueChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueChat-Prefix.pch"; sourceTree = "<group>"; };
+		EB82F35715C7718600FE7623 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB82F35815C7718600FE7623 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB82F35B15C7718600FE7623 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EB82F37015C7718600FE7623 /* BlueChatTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueChatTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB82F37115C7718600FE7623 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EB82F37915C7718600FE7623 /* BlueChatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueChatTests-Info.plist"; sourceTree = "<group>"; };
+		EB82F37B15C7718600FE7623 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB82F37D15C7718600FE7623 /* BlueChatTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueChatTests.h; sourceTree = "<group>"; };
+		EB82F37E15C7718600FE7623 /* BlueChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueChatTests.m; sourceTree = "<group>"; };
+		EB82F38815C771CA00FE7623 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EB82F38915C771CA00FE7623 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EB82F39A15C7734A00FE7623 /* ConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionViewController.h; sourceTree = "<group>"; };
+		EB82F39B15C7734A00FE7623 /* ConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionViewController.m; sourceTree = "<group>"; };
+		EB82F39D15C7738300FE7623 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		EB82F39E15C7738300FE7623 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		EB82F3A015C7738B00FE7623 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		EB82F3A115C7738B00FE7623 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB82F34115C7718600FE7623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82F34915C7718600FE7623 /* UIKit.framework in Frameworks */,
+				EB82F34B15C7718600FE7623 /* Foundation.framework in Frameworks */,
+				EB82F34D15C7718600FE7623 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB82F36C15C7718600FE7623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82F37215C7718600FE7623 /* SenTestingKit.framework in Frameworks */,
+				EB82F37315C7718600FE7623 /* UIKit.framework in Frameworks */,
+				EB82F37415C7718600FE7623 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB82F33915C7718600FE7623 = {
+			isa = PBXGroup;
+			children = (
+				EB82F34E15C7718600FE7623 /* BlueChat */,
+				EB82F37715C7718600FE7623 /* BlueChatTests */,
+				EB82F34715C7718600FE7623 /* Frameworks */,
+				EB82F34515C7718600FE7623 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB82F34515C7718600FE7623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB82F34415C7718600FE7623 /* BlueChat.app */,
+				EB82F37015C7718600FE7623 /* BlueChatTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB82F34715C7718600FE7623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB82F34815C7718600FE7623 /* UIKit.framework */,
+				EB82F34A15C7718600FE7623 /* Foundation.framework */,
+				EB82F34C15C7718600FE7623 /* CoreGraphics.framework */,
+				EB82F37115C7718600FE7623 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB82F34E15C7718600FE7623 /* BlueChat */ = {
+			isa = PBXGroup;
+			children = (
+				EB82F35715C7718600FE7623 /* AppDelegate.h */,
+				EB82F35815C7718600FE7623 /* AppDelegate.m */,
+				EB82F35A15C7718600FE7623 /* MainStoryboard.storyboard */,
+				EB82F34F15C7718600FE7623 /* Supporting Files */,
+				EB82F38815C771CA00FE7623 /* MainViewController.h */,
+				EB82F38915C771CA00FE7623 /* MainViewController.m */,
+				EB82F39A15C7734A00FE7623 /* ConnectionViewController.h */,
+				EB82F39B15C7734A00FE7623 /* ConnectionViewController.m */,
+				EB82F39D15C7738300FE7623 /* ListViewController.h */,
+				EB82F39E15C7738300FE7623 /* ListViewController.m */,
+				EB82F3A015C7738B00FE7623 /* SettingViewController.h */,
+				EB82F3A115C7738B00FE7623 /* SettingViewController.m */,
+			);
+			path = BlueChat;
+			sourceTree = "<group>";
+		};
+		EB82F34F15C7718600FE7623 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB82F35015C7718600FE7623 /* BlueChat-Info.plist */,
+				EB82F35115C7718600FE7623 /* InfoPlist.strings */,
+				EB82F35415C7718600FE7623 /* main.m */,
+				EB82F35615C7718600FE7623 /* BlueChat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB82F37715C7718600FE7623 /* BlueChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB82F37D15C7718600FE7623 /* BlueChatTests.h */,
+				EB82F37E15C7718600FE7623 /* BlueChatTests.m */,
+				EB82F37815C7718600FE7623 /* Supporting Files */,
+			);
+			path = BlueChatTests;
+			sourceTree = "<group>";
+		};
+		EB82F37815C7718600FE7623 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB82F37915C7718600FE7623 /* BlueChatTests-Info.plist */,
+				EB82F37A15C7718600FE7623 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB82F34315C7718600FE7623 /* BlueChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB82F38215C7718600FE7623 /* Build configuration list for PBXNativeTarget "BlueChat" */;
+			buildPhases = (
+				EB82F34015C7718600FE7623 /* Sources */,
+				EB82F34115C7718600FE7623 /* Frameworks */,
+				EB82F34215C7718600FE7623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueChat;
+			productName = BlueChat;
+			productReference = EB82F34415C7718600FE7623 /* BlueChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB82F36F15C7718600FE7623 /* BlueChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB82F38515C7718600FE7623 /* Build configuration list for PBXNativeTarget "BlueChatTests" */;
+			buildPhases = (
+				EB82F36B15C7718600FE7623 /* Sources */,
+				EB82F36C15C7718600FE7623 /* Frameworks */,
+				EB82F36D15C7718600FE7623 /* Resources */,
+				EB82F36E15C7718600FE7623 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB82F37615C7718600FE7623 /* PBXTargetDependency */,
+			);
+			name = BlueChatTests;
+			productName = BlueChatTests;
+			productReference = EB82F37015C7718600FE7623 /* BlueChatTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB82F33B15C7718600FE7623 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "NHN Map FE";
+			};
+			buildConfigurationList = EB82F33E15C7718600FE7623 /* Build configuration list for PBXProject "BlueChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB82F33915C7718600FE7623;
+			productRefGroup = EB82F34515C7718600FE7623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB82F34315C7718600FE7623 /* BlueChat */,
+				EB82F36F15C7718600FE7623 /* BlueChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB82F34215C7718600FE7623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82F35315C7718600FE7623 /* InfoPlist.strings in Resources */,
+				EB82F35C15C7718600FE7623 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB82F36D15C7718600FE7623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82F37C15C7718600FE7623 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB82F36E15C7718600FE7623 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB82F34015C7718600FE7623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82F35515C7718600FE7623 /* main.m in Sources */,
+				EB82F35915C7718600FE7623 /* AppDelegate.m in Sources */,
+				EB82F38A15C771CA00FE7623 /* MainViewController.m in Sources */,
+				EB82F39C15C7734A00FE7623 /* ConnectionViewController.m in Sources */,
+				EB82F39F15C7738300FE7623 /* ListViewController.m in Sources */,
+				EB82F3A215C7738B00FE7623 /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB82F36B15C7718600FE7623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82F37F15C7718600FE7623 /* BlueChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB82F37615C7718600FE7623 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB82F34315C7718600FE7623 /* BlueChat */;
+			targetProxy = EB82F37515C7718600FE7623 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB82F35115C7718600FE7623 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB82F35215C7718600FE7623 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB82F35A15C7718600FE7623 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB82F35B15C7718600FE7623 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		EB82F37A15C7718600FE7623 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB82F37B15C7718600FE7623 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB82F38015C7718600FE7623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB82F38115C7718600FE7623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB82F38315C7718600FE7623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueChat/BlueChat-Prefix.pch";
+				INFOPLIST_FILE = "BlueChat/BlueChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB82F38415C7718600FE7623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueChat/BlueChat-Prefix.pch";
+				INFOPLIST_FILE = "BlueChat/BlueChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EB82F38615C7718600FE7623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueChat.app/BlueChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueChat/BlueChat-Prefix.pch";
+				INFOPLIST_FILE = "BlueChatTests/BlueChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EB82F38715C7718600FE7623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueChat.app/BlueChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueChat/BlueChat-Prefix.pch";
+				INFOPLIST_FILE = "BlueChatTests/BlueChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB82F33E15C7718600FE7623 /* Build configuration list for PBXProject "BlueChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB82F38015C7718600FE7623 /* Debug */,
+				EB82F38115C7718600FE7623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB82F38215C7718600FE7623 /* Build configuration list for PBXNativeTarget "BlueChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB82F38315C7718600FE7623 /* Debug */,
+				EB82F38415C7718600FE7623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB82F38515C7718600FE7623 /* Build configuration list for PBXNativeTarget "BlueChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB82F38615C7718600FE7623 /* Debug */,
+				EB82F38715C7718600FE7623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB82F33B15C7718600FE7623 /* Project object */;
+}
