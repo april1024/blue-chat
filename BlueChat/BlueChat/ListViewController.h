@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ListViewController : UITableViewController
+    <UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UITableView *tbl;
+    NSMutableArray *messages;
+}
+
+@property (strong, nonatomic) UITableView *tbl;
+@property (strong, nonatomic) NSMutableArray *messages;
 
 @end

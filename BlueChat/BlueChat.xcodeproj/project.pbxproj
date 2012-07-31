@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AAA82C515C78F9700A02ED6 /* MessageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */; };
+		0AAA82C915C7921600A02ED6 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA82C715C7921600A02ED6 /* green.png */; };
+		0AAA82CA15C7921600A02ED6 /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA82C815C7921600A02ED6 /* grey.png */; };
 		EB82F34915C7718600FE7623 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82F34815C7718600FE7623 /* UIKit.framework */; };
 		EB82F34B15C7718600FE7623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82F34A15C7718600FE7623 /* Foundation.framework */; };
 		EB82F34D15C7718600FE7623 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82F34C15C7718600FE7623 /* CoreGraphics.framework */; };
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AAA82C315C78F9700A02ED6 /* MessageTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableCell.h; sourceTree = "<group>"; };
+		0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableCell.m; sourceTree = "<group>"; };
+		0AAA82C715C7921600A02ED6 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = ../../icelancer/SMSBubble/SMSBubble/green.png; sourceTree = "<group>"; };
+		0AAA82C815C7921600A02ED6 /* grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grey.png; path = ../../icelancer/SMSBubble/SMSBubble/grey.png; sourceTree = "<group>"; };
 		EB82F34415C7718600FE7623 /* BlueChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB82F34815C7718600FE7623 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB82F34A15C7718600FE7623 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,6 +127,8 @@
 		EB82F34E15C7718600FE7623 /* BlueChat */ = {
 			isa = PBXGroup;
 			children = (
+				0AAA82C715C7921600A02ED6 /* green.png */,
+				0AAA82C815C7921600A02ED6 /* grey.png */,
 				EB82F35715C7718600FE7623 /* AppDelegate.h */,
 				EB82F35815C7718600FE7623 /* AppDelegate.m */,
 				EB82F35A15C7718600FE7623 /* MainStoryboard.storyboard */,
@@ -132,6 +141,8 @@
 				EB82F39E15C7738300FE7623 /* ListViewController.m */,
 				EB82F3A015C7738B00FE7623 /* SettingViewController.h */,
 				EB82F3A115C7738B00FE7623 /* SettingViewController.m */,
+				0AAA82C315C78F9700A02ED6 /* MessageTableCell.h */,
+				0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */,
 			);
 			path = BlueChat;
 			sourceTree = "<group>";
@@ -239,6 +250,8 @@
 			files = (
 				EB82F35315C7718600FE7623 /* InfoPlist.strings in Resources */,
 				EB82F35C15C7718600FE7623 /* MainStoryboard.storyboard in Resources */,
+				0AAA82C915C7921600A02ED6 /* green.png in Resources */,
+				0AAA82CA15C7921600A02ED6 /* grey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +292,7 @@
 				EB82F39C15C7734A00FE7623 /* ConnectionViewController.m in Sources */,
 				EB82F39F15C7738300FE7623 /* ListViewController.m in Sources */,
 				EB82F3A215C7738B00FE7623 /* SettingViewController.m in Sources */,
+				0AAA82C515C78F9700A02ED6 /* MessageTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +466,7 @@
 				EB82F38415C7718600FE7623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB82F38515C7718600FE7623 /* Build configuration list for PBXNativeTarget "BlueChatTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +475,7 @@
 				EB82F38715C7718600FE7623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
