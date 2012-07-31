@@ -29,7 +29,7 @@
         <scene sceneID="0i6-Nh-EW5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTa-VN-Vca" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="HQq-oj-B2y" userLabel="Mode View Controller - Connect" customClass="ViewController" sceneMemberID="viewController">
+                <tableViewController id="HQq-oj-B2y" userLabel="Mode View Controller - Connect" customClass="ModeViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SwC-1a-uuh" userLabel="Table View - Options">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,11 +88,11 @@
             </objects>
             <point key="canvasLocation" x="1147" y="-112"/>
         </scene>
-        <!--Table View Controller - Client List-->
+        <!--Client Table View Controller - Client List-->
         <scene sceneID="vPB-DS-wpy">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0l-pB-203" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="lFP-b1-yU5" sceneMemberID="viewController">
+                <tableViewController id="lFP-b1-yU5" customClass="ClientTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zWD-wV-cFz">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,11 +116,11 @@
             </objects>
             <point key="canvasLocation" x="2095" y="-220"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Connect-->
         <scene sceneID="bGi-86-KqE">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1CE-wB-oqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="BXk-ir-efG" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="BXk-ir-efG" userLabel="Navigation Controller - Connect" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YAy-1G-Gsy">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -131,11 +131,11 @@
             </objects>
             <point key="canvasLocation" x="1616" y="-112"/>
         </scene>
-        <!--Table View Controller - Server List-->
+        <!--Server Table View Controller - Server List-->
         <scene sceneID="fTs-ox-dSr">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZz-eN-zbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="mZ9-kU-wQo" sceneMemberID="viewController">
+                <tableViewController id="mZ9-kU-wQo" customClass="ServerTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tBy-wW-cEe">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,11 +159,11 @@
             </objects>
             <point key="canvasLocation" x="2122" y="482"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Connect-->
         <scene sceneID="OuJ-Vn-Jyl">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUu-SW-Ts3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="E8y-h6-wSt" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="E8y-h6-wSt" userLabel="Navigation Controller - Connect" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lVi-an-LEV">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
