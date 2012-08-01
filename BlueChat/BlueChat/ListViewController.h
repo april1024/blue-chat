@@ -12,10 +12,14 @@
     <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UITableView *tbl;
+    IBOutlet UIToolbar *toolbar;
+    IBOutlet UITextField *field;
     NSMutableArray *messages;
 }
 
 @property (strong, nonatomic) UITableView *tbl;
+@property (strong, nonatomic) UIToolbar *toolbar;
+@property (strong, nonatomic) UITextField *field;
 @property (strong, nonatomic) NSMutableArray *messages;
 
 @end

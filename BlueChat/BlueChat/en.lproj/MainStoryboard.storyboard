@@ -218,18 +218,29 @@
                                     <outlet property="delegate" destination="EPm-oH-xjV" id="MBM-dG-i1H"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="qNh-mP-hTi">
-                                <rect key="frame" x="0.0" y="336" width="320" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="XuU-2l-SAU">
+                                <rect key="frame" x="0.0" y="323" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="KUl-yG-eRK">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="HuW-az-ZVv">
+                                            <rect key="frame" x="12" y="7" width="244" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem title="전송" id="jxM-8x-Kqz"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="ChatView" id="IAe-dT-DfU"/>
                     <connections>
+                        <outlet property="field" destination="HuW-az-ZVv" id="h2V-gO-OgQ"/>
                         <outlet property="tbl" destination="fLt-fc-djP" id="fiV-Vn-Icj"/>
+                        <outlet property="toolbar" destination="XuU-2l-SAU" id="Axd-Vr-Zfg"/>
                     </connections>
                 </viewController>
             </objects>
@@ -288,7 +299,9 @@
         <class className="ListViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ListViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="field" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="tbl" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
             </relationships>
         </class>
         <class className="MainViewController" superclassName="UITabBarController">
