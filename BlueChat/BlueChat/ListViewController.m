@@ -2,12 +2,11 @@
 //  ListViewController.m
 //  BlueChat
 //
-//  Created by Kyoungtaek Koo on 12. 7. 31..
+//  Created by Kyoungtaek Koo on 12. 8. 6..
 //  Copyright (c) 2012년 NHN Map FE. All rights reserved.
 //
 
 #import "ListViewController.h"
-#import "MessageTableCell.h"
 
 @interface ListViewController ()
 
@@ -15,39 +14,31 @@
 
 @implementation ListViewController
 
-@synthesize tbl, messages, toolbar, field;
-
-//- (id)initWithStyle:(UITableViewStyle)style
-//{
-//    self = [super initWithStyle:style];
-//    if (self) {
-//        // Custom initialization
-//    }
-//    return self;
-//}
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    messages = [[NSMutableArray alloc] initWithObjects:@"오늘 야근ㅠㅠ", @"헐...진짜?",
-                @"ㄴㅇ러민아ㅓ림나어리ㅏㅁ누이파ㅜㅁ니아푸미;나ㅜㅇ피ㅏㅜㄴㅁ이ㅏ푼미우피나ㅜㅇ핀무이푼밍품니우핌눙핌나ㅜ이파ㅜㄴㅁ이ㅏ품니ㅏ우피ㅏㅁㄴ우ㅏㅣ푸니ㅏㅇㅇㅇㅇㅇㅇㅇ우미나우핌나우피ㅏㅁ누이파누이ㅏ푼미아ㅜ피나우핀마ㅜㅇ피ㅏ눔이ㅏ푼미ㅏ우핀뭉피ㅏ눔이푸닝푸니우핌우\n멘붕!!!",
-                @"ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-                @"웃지마라..ㅡㅡ^",nil];
-    
-    tbl.backgroundColor = [UIColor colorWithRed:219.0/255.0 green:226.0/255.0 blue:237.0/255.0 alpha:1.0];
-    
-
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void) viewWillAppear:(BOOL)animated
+- (void)viewDidUnload
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:self.view.window];
-}
-
-- (void) viewWillDisappear:(BOOL)animated
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -55,100 +46,90 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-	[textField resignFirstResponder];
-	[UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.3];
-	toolbar.frame = CGRectMake(0, 372, 320, 44);
-	tbl.frame = CGRectMake(0, 0, 320, 372);
-	[UIView commitAnimations];
-	
-	return YES;
-}
-
-- (void)keyboardWillShow:(NSNotification *)notif {
-	[UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.3];
-	toolbar.frame = CGRectMake(0, 156, 320, 44);
-	tbl.frame = CGRectMake(0, 0, 320, 156);
-	[UIView commitAnimations];
-	
-	if([messages count] > 0)
-	{
-		NSUInteger index = [messages count] - 1;
-		[tbl scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
-	}
-}
+#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [messages count];
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    MessageTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[MessageTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    } else {
-        cell.balloonView = (UIImageView *)[[cell.contentView viewWithTag:0] viewWithTag:1];
-        cell.label = (UILabel *)[[cell.contentView viewWithTag:0] viewWithTag:2];
-        cell.senderView = (UIImageView *)[[cell.contentView viewWithTag:0] viewWithTag:3];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Configure the cell...
+    if(cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+    cell.textLabel.text = [NSString stringWithFormat:@"List Cell - %d", [indexPath row]];
     
-    NSString *text = [messages objectAtIndex:indexPath.row];
-    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:14.0] constrainedToSize:CGSizeMake(240.0f, 480.0f) lineBreakMode:UILineBreakModeWordWrap];
-   
-    
-    //TODO 말한 사람이 누군지에 따라 분기하도록 수정할 것
-    UIImage *balloon;
-    
-    if (indexPath.row % 2 == 0) {
-        cell.senderView.image = nil;
-        cell.balloonView.frame = CGRectMake(320.0f - (size.width + 28.0f), 10.0f, size.width + 28.0f, size.height + 15.0f);
-        balloon = [[UIImage imageNamed:@"green.png"] stretchableImageWithLeftCapWidth:24 topCapHeight:15];
-        cell.label.frame = CGRectMake(307.0f - (size.width + 5.0f), 16.0f, size.width + 5.0f, size.height);
-    } else {
-        //UIImage *sender = [UIImage imageNamed:@"imgres.jpeg"];
-        UIImage *sender = nil;
-        cell.senderView.frame = CGRectMake(0, size.height - 20, 40, 40);
-        cell.senderView.image = sender;
-        cell.balloonView.frame = CGRectMake(40, 10.0f, size.width + 28.0f, size.height + 15);
-        balloon = [[UIImage imageNamed:@"grey.png"] stretchableImageWithLeftCapWidth:24 topCapHeight:15];
-		cell.label.frame = CGRectMake(16 + 40, 16, size.width + 5, size.height);
-    }
-    
-    cell.balloonView.image = balloon;
-    cell.label.text = text;
-
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+/*
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *body = [messages objectAtIndex:indexPath.row];
-	CGSize size = [body sizeWithFont:[UIFont systemFontOfSize:14.0] constrainedToSize:CGSizeMake(240.0, 480.0) lineBreakMode:UILineBreakModeWordWrap];
-	return size.height + 22;
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
 }
+*/
+
+/*
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }   
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }   
+}
+*/
+
+/*
+// Override to support rearranging the table view.
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+{
+}
+*/
+
+/*
+// Override to support conditional rearranging of the table view.
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the item to be re-orderable.
+    return YES;
+}
+*/
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    // Navigation logic may go here. Create and push another view controller.
+//    /*
+//     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+//     // ...
+//     // Pass the selected object to the new view controller.
+//     [self.navigationController pushViewController:detailViewController animated:YES];
+//     */
+//}
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *path = [self.tableView indexPathForCell:sender];
+}
 @end

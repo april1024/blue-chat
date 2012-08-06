@@ -1,5 +1,5 @@
 //
-//  ListViewController.h
+//  BlueChatNavigationController.h
 //  BlueChat
 //
 //  Created by Kyoungtaek Koo on 12. 8. 6..
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListViewController : UITableViewController
+@interface BlueChatNavigationController : UINavigationController
 
 @end

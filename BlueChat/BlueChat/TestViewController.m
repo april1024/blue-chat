@@ -1,18 +1,18 @@
 //
-//  MainViewController.m
+//  TestViewController.m
 //  BlueChat
 //
-//  Created by Kyoungtaek Koo on 12. 7. 31..
+//  Created by Kyoungtaek Koo on 12. 8. 6..
 //  Copyright (c) 2012년 NHN Map FE. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "TestViewController.h"
 
-@interface MainViewController ()
+@interface TestViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation TestViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,25 +23,17 @@
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-//        [self.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar_02.png"]];
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

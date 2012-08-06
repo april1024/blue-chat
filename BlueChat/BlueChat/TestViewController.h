@@ -1,5 +1,5 @@
 //
-//  ListViewController.h
+//  TestViewController.h
 //  BlueChat
 //
 //  Created by Kyoungtaek Koo on 12. 8. 6..
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListViewController : UITableViewController
+@interface TestViewController : UINavigationController
 
 @end
