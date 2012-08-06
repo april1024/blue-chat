@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A975EE615CFDD0A0071F0CF /* ClientTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A975EE515CFDD0A0071F0CF /* ClientTableViewController.m */; };
 		0AAA82C515C78F9700A02ED6 /* MessageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */; };
 		0AAA82C915C7921600A02ED6 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA82C715C7921600A02ED6 /* green.png */; };
 		0AAA82CA15C7921600A02ED6 /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA82C815C7921600A02ED6 /* grey.png */; };
@@ -77,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A975EE415CFDD0A0071F0CF /* ClientTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientTableViewController.h; sourceTree = "<group>"; };
+		0A975EE515CFDD0A0071F0CF /* ClientTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientTableViewController.m; sourceTree = "<group>"; };
 		0AAA82C315C78F9700A02ED6 /* MessageTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableCell.h; sourceTree = "<group>"; };
 		0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableCell.m; sourceTree = "<group>"; };
 		0AAA82C715C7921600A02ED6 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = ../../icelancer/SMSBubble/SMSBubble/green.png; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				EBD5DF4A15CF60CD00909993 /* ListViewController.h */,
 				EBD5DF4B15CF60CD00909993 /* ListViewController.m */,
 				EB82F34F15C7718600FE7623 /* Supporting Files */,
+				0A975EE415CFDD0A0071F0CF /* ClientTableViewController.h */,
+				0A975EE515CFDD0A0071F0CF /* ClientTableViewController.m */,
 			);
 			path = BlueChat;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 				EBB6779815CF563C0012FA1F /* BlueChatNavigationController.m in Sources */,
 				EBB677A215CF5C330012FA1F /* TestViewController.m in Sources */,
 				EBD5DF4C15CF60CD00909993 /* ListViewController.m in Sources */,
+				0A975EE615CFDD0A0071F0CF /* ClientTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
