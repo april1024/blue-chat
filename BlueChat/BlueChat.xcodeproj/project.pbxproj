@@ -11,6 +11,10 @@
 		0AAA82C515C78F9700A02ED6 /* MessageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */; };
 		0AAA82C915C7921600A02ED6 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA82C715C7921600A02ED6 /* green.png */; };
 		0AAA82CA15C7921600A02ED6 /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA82C815C7921600A02ED6 /* grey.png */; };
+		619E19EB15D1805F0092BF14 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619E19EA15D1805F0092BF14 /* GameKit.framework */; };
+		61E53B9D15D17F0C0078A47C /* ServerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E53B9C15D17F0C0078A47C /* ServerTableViewController.m */; };
+		61E53BA115D180140078A47C /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E53BA015D180140078A47C /* Server.m */; };
+		61E53BA415D180260078A47C /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E53BA315D180260078A47C /* Client.m */; };
 		EB50F24815CF652B00817E5D /* navigation_02_btn_01_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = EB50F23D15CF652B00817E5D /* navigation_02_btn_01_tab.png */; };
 		EB50F24915CF652B00817E5D /* navigation_02_btn_01_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB50F23E15CF652B00817E5D /* navigation_02_btn_01_tab@2x.png */; };
 		EB50F24A15CF652B00817E5D /* navigation_02_btn_01.png in Resources */ = {isa = PBXBuildFile; fileRef = EB50F23F15CF652B00817E5D /* navigation_02_btn_01.png */; };
@@ -84,6 +88,13 @@
 		0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableCell.m; sourceTree = "<group>"; };
 		0AAA82C715C7921600A02ED6 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = ../../icelancer/SMSBubble/SMSBubble/green.png; sourceTree = "<group>"; };
 		0AAA82C815C7921600A02ED6 /* grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grey.png; path = ../../icelancer/SMSBubble/SMSBubble/grey.png; sourceTree = "<group>"; };
+		619E19EA15D1805F0092BF14 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		61E53B9B15D17F0C0078A47C /* ServerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerTableViewController.h; sourceTree = "<group>"; };
+		61E53B9C15D17F0C0078A47C /* ServerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerTableViewController.m; sourceTree = "<group>"; };
+		61E53B9F15D180140078A47C /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		61E53BA015D180140078A47C /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		61E53BA215D180260078A47C /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		61E53BA315D180260078A47C /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
 		EB50F23D15CF652B00817E5D /* navigation_02_btn_01_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_02_btn_01_tab.png; sourceTree = "<group>"; };
 		EB50F23E15CF652B00817E5D /* navigation_02_btn_01_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_02_btn_01_tab@2x.png"; sourceTree = "<group>"; };
 		EB50F23F15CF652B00817E5D /* navigation_02_btn_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_02_btn_01.png; sourceTree = "<group>"; };
@@ -157,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619E19EB15D1805F0092BF14 /* GameKit.framework in Frameworks */,
 				EB82F34915C7718600FE7623 /* UIKit.framework in Frameworks */,
 				EB82F34B15C7718600FE7623 /* Foundation.framework in Frameworks */,
 				EB82F34D15C7718600FE7623 /* CoreGraphics.framework in Frameworks */,
@@ -176,9 +188,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61E53B9915D17ED50078A47C /* ConnectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A975EE415CFDD0A0071F0CF /* ClientTableViewController.h */,
+				0A975EE515CFDD0A0071F0CF /* ClientTableViewController.m */,
+				61E53B9B15D17F0C0078A47C /* ServerTableViewController.h */,
+				61E53B9C15D17F0C0078A47C /* ServerTableViewController.m */,
+			);
+			name = ConnectionViewController;
+			sourceTree = "<group>";
+		};
+		61E53B9E15D17FDB0078A47C /* ConnectionModule */ = {
+			isa = PBXGroup;
+			children = (
+				61E53B9F15D180140078A47C /* Server.h */,
+				61E53BA015D180140078A47C /* Server.m */,
+				61E53BA215D180260078A47C /* Client.h */,
+				61E53BA315D180260078A47C /* Client.m */,
+			);
+			name = ConnectionModule;
+			sourceTree = "<group>";
+		};
 		EB82F33915C7718600FE7623 = {
 			isa = PBXGroup;
 			children = (
+				619E19EA15D1805F0092BF14 /* GameKit.framework */,
 				EB82F34E15C7718600FE7623 /* BlueChat */,
 				EB82F37715C7718600FE7623 /* BlueChatTests */,
 				EB82F34715C7718600FE7623 /* Frameworks */,
@@ -209,6 +244,8 @@
 		EB82F34E15C7718600FE7623 /* BlueChat */ = {
 			isa = PBXGroup;
 			children = (
+				61E53B9E15D17FDB0078A47C /* ConnectionModule */,
+				61E53B9915D17ED50078A47C /* ConnectionViewController */,
 				0AAA82C715C7921600A02ED6 /* green.png */,
 				0AAA82C815C7921600A02ED6 /* grey.png */,
 				EB82F35715C7718600FE7623 /* AppDelegate.h */,
@@ -232,8 +269,6 @@
 				EBD5DF4A15CF60CD00909993 /* ListViewController.h */,
 				EBD5DF4B15CF60CD00909993 /* ListViewController.m */,
 				EB82F34F15C7718600FE7623 /* Supporting Files */,
-				0A975EE415CFDD0A0071F0CF /* ClientTableViewController.h */,
-				0A975EE515CFDD0A0071F0CF /* ClientTableViewController.m */,
 			);
 			path = BlueChat;
 			sourceTree = "<group>";
@@ -457,6 +492,9 @@
 				EBB677A215CF5C330012FA1F /* TestViewController.m in Sources */,
 				EBD5DF4C15CF60CD00909993 /* ListViewController.m in Sources */,
 				0A975EE615CFDD0A0071F0CF /* ClientTableViewController.m in Sources */,
+				61E53B9D15D17F0C0078A47C /* ServerTableViewController.m in Sources */,
+				61E53BA115D180140078A47C /* Server.m in Sources */,
+				61E53BA415D180260078A47C /* Client.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

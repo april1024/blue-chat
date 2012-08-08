@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2818" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1900"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="15">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
                 <tabBarController id="4" customClass="MainViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
@@ -22,13 +21,13 @@
                         <segue destination="ExY-Z1-AH3" kind="relationship" relationship="viewControllers" id="0zu-Qz-qZe"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="180"/>
         </scene>
         <!--Mode View Controller - Connect-->
         <scene sceneID="0i6-Nh-EW5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OTa-VN-Vca" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="HQq-oj-B2y" userLabel="Mode View Controller - Connect" customClass="ModeViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SwC-1a-uuh" userLabel="Table View - Options">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -44,12 +43,12 @@
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Server" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="oS7-WG-0Dl">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" text="Server" autoshrinkMode="minimumFontSize" id="oS7-WG-0Dl">
                                                     <rect key="frame" x="20" y="11" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -65,12 +64,12 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Client" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hYb-iT-zEJ">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" text="Client" autoshrinkMode="minimumFontSize" id="hYb-iT-zEJ">
                                                     <rect key="frame" x="20" y="11" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -85,16 +84,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Connect" id="BG2-Ue-pGE"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTa-VN-Vca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1147" y="-112"/>
         </scene>
         <!--Client Table View Controller - Client List-->
         <scene sceneID="vPB-DS-wpy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e0l-pB-203" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="lFP-b1-yU5" customClass="ClientTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zWD-wV-cFz">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -108,22 +107,36 @@
                                 </view>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lFP-b1-yU5" id="QjK-Je-QpD"/>
+                            <outlet property="delegate" destination="lFP-b1-yU5" id="JCX-nP-b5b"/>
+                        </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Client List" id="n6r-fa-EEf">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="aXq-mD-oLe">
                             <connections>
-                                <action selector="close:" destination="lFP-b1-yU5" id="OLe-CI-NNT"/>
+                                <action selector="close:" destination="lFP-b1-yU5" id="Ys9-7q-x7l"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Start" id="ze4-4k-igH">
+                            <connections>
+                                <action selector="startAction:" destination="lFP-b1-yU5" id="2vz-uf-9hF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="zWD-wV-cFz" id="oIG-oU-HgG"/>
+                    </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0l-pB-203" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2095" y="-220"/>
         </scene>
         <!--Navigation Controller - Connect-->
         <scene sceneID="bGi-86-KqE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1CE-wB-oqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="BXk-ir-efG" userLabel="Navigation Controller - Connect" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YAy-1G-Gsy">
                         <autoresizingMask key="autoresizingMask"/>
@@ -132,13 +145,13 @@
                         <segue destination="lFP-b1-yU5" kind="relationship" relationship="rootViewController" id="YKr-wJ-yI6"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1CE-wB-oqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1616" y="-112"/>
         </scene>
         <!--Server Table View Controller - Server List-->
         <scene sceneID="fTs-ox-dSr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jZz-eN-zbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="mZ9-kU-wQo" customClass="ServerTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tBy-wW-cEe">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -155,18 +168,29 @@
                                 </view>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mZ9-kU-wQo" id="0xt-E2-rJa"/>
+                            <outlet property="delegate" destination="mZ9-kU-wQo" id="tVZ-62-TAB"/>
+                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Server List" id="JY6-uv-Rxd">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="TG9-pm-fGi"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="TG9-pm-fGi">
+                            <connections>
+                                <action selector="close:" destination="mZ9-kU-wQo" id="cyh-bb-4y2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="tBy-wW-cEe" id="Gs1-cd-OTD"/>
+                    </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZz-eN-zbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2442" y="460"/>
         </scene>
         <!--Navigation Controller - Connect-->
         <scene sceneID="OuJ-Vn-Jyl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QUu-SW-Ts3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="E8y-h6-wSt" userLabel="Navigation Controller - Connect" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lVi-an-LEV">
                         <autoresizingMask key="autoresizingMask"/>
@@ -175,13 +199,13 @@
                         <segue destination="mZ9-kU-wQo" kind="relationship" relationship="rootViewController" id="Ldk-4Y-yGx"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUu-SW-Ts3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2040" y="460"/>
         </scene>
         <!--Setting View Controller - Setting-->
         <scene sceneID="Qod-am-Ff1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VdJ-Bv-Kgy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="qHa-1O-VAd" customClass="SettingViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="NOM-EX-ebH">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -201,13 +225,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Setting" id="xTz-9o-buT"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdJ-Bv-Kgy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1164" y="1149"/>
         </scene>
         <!--Chat View Controller - ChatView-->
         <scene sceneID="ddi-38-lyB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O7p-0Q-il8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="EPm-oH-xjV" customClass="ChatViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uAD-eE-jjT">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -230,8 +254,8 @@
                                         <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="HuW-az-ZVv">
                                             <rect key="frame" x="12" y="7" width="244" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         </textField>
                                     </barButtonItem>
                                     <barButtonItem title="전송" id="jxM-8x-Kqz"/>
@@ -247,13 +271,13 @@
                         <outlet property="toolbar" destination="XuU-2l-SAU" id="Axd-Vr-Zfg"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7p-0Q-il8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1516" y="536"/>
         </scene>
         <!--List View Controller - Chat-->
         <scene sceneID="JqL-VR-3YG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1qQ-oD-4QM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="FLB-vv-ZQd" customClass="ListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gbH-ZW-dfY">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -280,13 +304,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Chat" id="lX0-sz-Y4p"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qQ-oD-4QM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1073" y="536"/>
         </scene>
         <!--Blue Chat Navigation Controller - Setting-->
         <scene sceneID="Yxf-Xe-0MO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0VP-gG-Yn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="ExY-Z1-AH3" customClass="BlueChatNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Setting" image="tabbar_04.png" id="gFw-0k-TgU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Oc3-3u-1TH">
@@ -296,13 +320,13 @@
                         <segue destination="qHa-1O-VAd" kind="relationship" relationship="rootViewController" id="P3N-r6-m7M"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VP-gG-Yn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="630" y="1149"/>
         </scene>
         <!--Blue Chat Navigation Controller - Chat-->
         <scene sceneID="5i6-Tc-8x4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9nt-pv-fKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="f9F-rG-tHW" customClass="BlueChatNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Chat" image="tabbar_02.png" id="qkd-Jx-jJk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a67-yu-wMk">
@@ -312,13 +336,13 @@
                         <segue destination="FLB-vv-ZQd" kind="relationship" relationship="rootViewController" id="kK3-rI-bQn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nt-pv-fKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="687" y="531"/>
         </scene>
         <!--Blue Chat Navigation Controller - Connect-->
         <scene sceneID="wt2-bX-M23">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ue9-7S-59M" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="sSn-nP-7Mt" customClass="BlueChatNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Connect" image="tabbar_01.png" id="1iO-fI-EED"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ezd-DN-LPq">
@@ -328,6 +352,7 @@
                         <segue destination="HQq-oj-B2y" kind="relationship" relationship="rootViewController" id="vVg-0A-lLu"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ue9-7S-59M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="630" y="-112"/>
         </scene>
@@ -353,6 +378,10 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ClientTableViewController.h"/>
             <relationships>
                 <relationship kind="action" name="close:"/>
+                <relationship kind="action" name="exitAction:"/>
+                <relationship kind="action" name="startAction:"/>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="ListViewController" superclassName="UITableViewController">
@@ -360,6 +389,18 @@
         </class>
         <class className="MainViewController" superclassName="UITabBarController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="hostGameAction:"/>
+                <relationship kind="action" name="joinGameAction:"/>
+            </relationships>
+        </class>
+        <class className="ServerTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ServerTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="close:"/>
+                <relationship kind="action" name="exitAction:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="SettingViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingViewController.h"/>

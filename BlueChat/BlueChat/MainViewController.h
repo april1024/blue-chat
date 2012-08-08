@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ClientTableViewController.h"
+#import "ServerTableViewController.h"
 
 @interface MainViewController : UITabBarController
-
+<ClientTableViewControllerDelegate, ServerTableViewControllerDelegate>
 @end

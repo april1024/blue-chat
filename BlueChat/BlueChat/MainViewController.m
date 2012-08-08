@@ -7,6 +7,8 @@
 //
 
 #import "MainViewController.h"
+#import "ServerTableViewController.h"
+#import "ClientTableViewController.h"
 
 @interface MainViewController ()
 
@@ -48,5 +50,16 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+            
+              
+#pragma mark - Delloc
+              
+              - (void)dealloc
+    {
+#ifdef DEBUG
+        NSLog(@"dealloc %@", self);
+#endif
+    }
+              
 
 @end

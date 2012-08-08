@@ -3,16 +3,37 @@
 //  BlueChat
 //
 //  Created by 김광호 on 12. 8. 6..
+//  Created by SUMIN LIM on 12. 8. 6..
 //  Copyright (c) 2012년 NHN Map FE. All rights reserved.
 //
 
 #import "ClientTableViewController.h"
-
+#import "Server.h"
 @interface ClientTableViewController ()
-
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@property (nonatomic, weak) IBOutlet UIButton *startButton; 
 @end
 
+
+
 @implementation ClientTableViewController
+{
+	Server *_server;
+    QuitReason _quitReason;
+}
+ 
+@synthesize tableView = _tableView;
+@synthesize delegate = _delegate;
+@synthesize startButton = _startButton;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (IBAction)close:(id)sender
 {
@@ -30,12 +51,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    if (_server == nil)
+	{
+		_server = [[Server alloc] init];
+		_server.maxClients = 3;
+        _server.delegate = self;
+		[_server startAcceptingConnectionsForSessionID:SESSION_ID];
+        NSLog(@"Me: %@", _server.session.displayName);
+		[self.tableView reloadData];
+	}
  
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
@@ -50,85 +76,88 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+
+- (IBAction)startAction:(id)sender
+{
+	if (_server != nil && [_server connectedClientCount] > 0)
+	{
+		NSString *name = _server.session.displayName;
+        
+		[_server stopAcceptingConnections];
+        
+		[self.delegate clientTableViewController:self startChattingWithSession:_server.session playerName:name clients:_server.connectedClients];
+	}
+}
+
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
+    
     return 1;
+    
 }
+- (IBAction)exitAction:(id)sender
+{
+	_quitReason = QuitReasonUserQuit;
+	[_server endSession];
+	[self.delegate clientTableViewControllerDidCancel:self];
+}
+
+
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    // Return the number of rows in the section.
-    return 10;
+    
+	if (_server != nil)
+		return [_server connectedClientCount];
+	else
+		return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+{static NSString *CellIdentifier = @"Cell";
     
-    // Configure the cell...
-    if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    cell.textLabel.text = [NSString stringWithFormat:@"List Cell - %d", [indexPath row]];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
-    return cell;
-}
+	NSString *peerID = [_server peerIDForConnectedClientAtIndex:indexPath.row];
+	cell.textLabel.text = [_server displayNameForPeerID:peerID];
+    
+	return cell;
+   }
+#pragma mark - ServerDelegate
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)server:(Server *)server clientDidConnect:(NSString *)peerID
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    NSLog(@"clientDIDConnected");
+	[self.tableView reloadData];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)server:(Server *)server clientDidDisconnect:(NSString *)peerID
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+     NSLog(@"clientDIDDisConnected");
+	[self.tableView reloadData];
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+- (void)serverSessionDidEnd:(Server *)server
+{NSLog(@"serverSessionDidEnd");
+	_server.delegate = nil;
+	_server = nil;
+	[self.tableView reloadData];
+	[self.delegate clientTableViewController:self didEndSessionWithReason:_quitReason];
+}
+
+- (void)serverNoNetwork:(Server *)session
 {
+    NSLog(@"serverNoNetwork");
+	_quitReason = QuitReasonNoNetwork;
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-
-
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Navigation logic may go here. Create and push another view controller.
-//    /*
-//     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-//     // ...
-//     // Pass the selected object to the new view controller.
-//     [self.navigationController pushViewController:detailViewController animated:YES];
-//     */
-//}
+ 
 
 @end
