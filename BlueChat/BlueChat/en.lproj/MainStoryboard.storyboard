@@ -256,13 +256,11 @@
                                             <rect key="frame" x="44" y="7" width="195" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <textInputTraits key="textInputTraits"/>
-<<<<<<< HEAD
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-=======
+
                                             <connections>
                                                 <outlet property="delegate" destination="EPm-oH-xjV" id="jLF-sK-GWi"/>
                                             </connections>
->>>>>>> 이벤트 추가.
+
                                         </textField>
                                     </barButtonItem>
                                     <barButtonItem title="전송" id="jxM-8x-Kqz"/>
