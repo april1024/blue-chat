@@ -37,7 +37,6 @@
     
     tbl.backgroundColor = [UIColor colorWithRed:219.0/255.0 green:226.0/255.0 blue:237.0/255.0 alpha:1.0];
     
-
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -50,6 +49,10 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
 }
 
+- (void) add {
+    
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
@@ -59,8 +62,8 @@
 	[textField resignFirstResponder];
 	[UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.3];
-	toolbar.frame = CGRectMake(0, 372, 320, 44);
-	tbl.frame = CGRectMake(0, 0, 320, 372);
+	toolbar.frame = CGRectMake(0, 325, 320, 44);
+	tbl.frame = CGRectMake(0, 0, 320, 337);
 	[UIView commitAnimations];
 	
 	return YES;
