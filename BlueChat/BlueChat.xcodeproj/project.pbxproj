@@ -11,6 +11,12 @@
 		0AAA82C515C78F9700A02ED6 /* MessageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */; };
 		0AAA82C915C7921600A02ED6 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA82C715C7921600A02ED6 /* green.png */; };
 		0AAA82CA15C7921600A02ED6 /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA82C815C7921600A02ED6 /* grey.png */; };
+		5F84EE9315D2612900FC827D /* ddl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F84EE9215D2612900FC827D /* ddl.txt */; };
+		5F84EE9E15D261F600FC827D /* Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84EE9615D261F500FC827D /* Chat.m */; };
+		5F84EE9F15D261F600FC827D /* ChatRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84EE9815D261F500FC827D /* ChatRoom.m */; };
+		5F84EEA015D261F600FC827D /* ConversationStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84EE9A15D261F600FC827D /* ConversationStorage.m */; };
+		5F84EEA115D261F600FC827D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84EE9D15D261F600FC827D /* Person.m */; };
+		5F84EEA315D2623D00FC827D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F84EEA215D2623D00FC827D /* libsqlite3.dylib */; };
 		619E19EB15D1805F0092BF14 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619E19EA15D1805F0092BF14 /* GameKit.framework */; };
 		61E53B9D15D17F0C0078A47C /* ServerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E53B9C15D17F0C0078A47C /* ServerTableViewController.m */; };
 		61E53BA115D180140078A47C /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E53BA015D180140078A47C /* Server.m */; };
@@ -88,6 +94,17 @@
 		0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableCell.m; sourceTree = "<group>"; };
 		0AAA82C715C7921600A02ED6 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = ../../icelancer/SMSBubble/SMSBubble/green.png; sourceTree = "<group>"; };
 		0AAA82C815C7921600A02ED6 /* grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grey.png; path = ../../icelancer/SMSBubble/SMSBubble/grey.png; sourceTree = "<group>"; };
+		5F84EE9215D2612900FC827D /* ddl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ddl.txt; sourceTree = "<group>"; };
+		5F84EE9515D261F500FC827D /* Chat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chat.h; sourceTree = "<group>"; };
+		5F84EE9615D261F500FC827D /* Chat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chat.m; sourceTree = "<group>"; };
+		5F84EE9715D261F500FC827D /* ChatRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoom.h; sourceTree = "<group>"; };
+		5F84EE9815D261F500FC827D /* ChatRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoom.m; sourceTree = "<group>"; };
+		5F84EE9915D261F600FC827D /* ConversationStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationStorage.h; sourceTree = "<group>"; };
+		5F84EE9A15D261F600FC827D /* ConversationStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationStorage.m; sourceTree = "<group>"; };
+		5F84EE9B15D261F600FC827D /* MessageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageType.h; sourceTree = "<group>"; };
+		5F84EE9C15D261F600FC827D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		5F84EE9D15D261F600FC827D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5F84EEA215D2623D00FC827D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		619E19EA15D1805F0092BF14 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		61E53B9B15D17F0C0078A47C /* ServerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerTableViewController.h; sourceTree = "<group>"; };
 		61E53B9C15D17F0C0078A47C /* ServerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerTableViewController.m; sourceTree = "<group>"; };
@@ -168,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F84EEA315D2623D00FC827D /* libsqlite3.dylib in Frameworks */,
 				619E19EB15D1805F0092BF14 /* GameKit.framework in Frameworks */,
 				EB82F34915C7718600FE7623 /* UIKit.framework in Frameworks */,
 				EB82F34B15C7718600FE7623 /* Foundation.framework in Frameworks */,
@@ -213,6 +231,7 @@
 		EB82F33915C7718600FE7623 = {
 			isa = PBXGroup;
 			children = (
+				5F84EEA215D2623D00FC827D /* libsqlite3.dylib */,
 				619E19EA15D1805F0092BF14 /* GameKit.framework */,
 				EB82F34E15C7718600FE7623 /* BlueChat */,
 				EB82F37715C7718600FE7623 /* BlueChatTests */,
@@ -268,6 +287,15 @@
 				EBB677A115CF5C330012FA1F /* TestViewController.xib */,
 				EBD5DF4A15CF60CD00909993 /* ListViewController.h */,
 				EBD5DF4B15CF60CD00909993 /* ListViewController.m */,
+				5F84EE9515D261F500FC827D /* Chat.h */,
+				5F84EE9615D261F500FC827D /* Chat.m */,
+				5F84EE9715D261F500FC827D /* ChatRoom.h */,
+				5F84EE9815D261F500FC827D /* ChatRoom.m */,
+				5F84EE9915D261F600FC827D /* ConversationStorage.h */,
+				5F84EE9A15D261F600FC827D /* ConversationStorage.m */,
+				5F84EE9B15D261F600FC827D /* MessageType.h */,
+				5F84EE9C15D261F600FC827D /* Person.h */,
+				5F84EE9D15D261F600FC827D /* Person.m */,
 				EB82F34F15C7718600FE7623 /* Supporting Files */,
 			);
 			path = BlueChat;
@@ -314,6 +342,7 @@
 				EB82F35115C7718600FE7623 /* InfoPlist.strings */,
 				EB82F35415C7718600FE7623 /* main.m */,
 				EB82F35615C7718600FE7623 /* BlueChat-Prefix.pch */,
+				5F84EE9215D2612900FC827D /* ddl.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -447,6 +476,7 @@
 				EB50F25015CF652B00817E5D /* navigation_btn_01@2x.png in Resources */,
 				EB50F25115CF652B00817E5D /* navigation_btn_02_tab@2x.png in Resources */,
 				EB50F25215CF652B00817E5D /* navigation_btn_02@2x.png in Resources */,
+				5F84EE9315D2612900FC827D /* ddl.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +533,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB82F37F15C7718600FE7623 /* BlueChatTests.m in Sources */,
+				5F84EE9E15D261F600FC827D /* Chat.m in Sources */,
+				5F84EE9F15D261F600FC827D /* ChatRoom.m in Sources */,
+				5F84EEA015D261F600FC827D /* ConversationStorage.m in Sources */,
+				5F84EEA115D261F600FC827D /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
