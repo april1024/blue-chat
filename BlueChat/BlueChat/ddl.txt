@@ -1,0 +1,44 @@
+/* SQLEditor (Generic SQL)*/
+
+CREATE TABLE Person
+(
+id VARCHAR,
+name VARCHAR,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE Settings
+(
+myId VARCHAR
+);
+
+CREATE TABLE ChatRoom
+(
+id VARCHAR UNIQUE,
+created DATE
+);
+
+CREATE TABLE Chat
+(
+chatRoomId VARCHAR,
+personId VARCHAR,
+message VARCHAR,
+date DATE,
+messageType INTEGER
+);
+
+CREATE TABLE ChatRoomParticipant
+(
+roomId VARCHAR,
+personId VARCHAR
+);
+
+ALTER TABLE Settings ADD FOREIGN KEY (myId) REFERENCES Person (id);
+
+ALTER TABLE Chat ADD FOREIGN KEY (chatRoomId) REFERENCES ChatRoom (id) ON DELETE CASCADE;
+
+ALTER TABLE Chat ADD FOREIGN KEY (personId) REFERENCES Person (id);
+
+ALTER TABLE ChatRoomParticipant ADD FOREIGN KEY (roomId) REFERENCES ChatRoom (id);
+
+ALTER TABLE ChatRoomParticipant ADD FOREIGN KEY (personId) REFERENCES Person (id);
