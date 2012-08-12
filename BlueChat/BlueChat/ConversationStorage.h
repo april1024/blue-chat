@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "/usr/include/sqlite3.h"
 #import "Chat.h"
+#import "ChatRoom.h"
 
 #define SQLITE_FILE_NAME "blueChat.db"
 #define DDL_FILE_NAME    "ddl.txt"
@@ -19,8 +20,8 @@
 }
 
 - (void)insertPerson: (NSString *)id name:(NSString *)name;
-- (NSMutableArray *)getChatRoomList;
-- (NSMutableArray *)getChatList: (NSString *)roomId;
+- (NSMutableArray *)selectChatRoomList;
+- (NSMutableArray *)selectChatList: (NSString *)roomId;
 - (void)insertChat: (Chat *)chat;
 - (void)insertChatRoom: (NSString *)roomId;
 - (void)insertChatRoomParticipant: (NSString *)roomId personId:(NSString *)personId;
