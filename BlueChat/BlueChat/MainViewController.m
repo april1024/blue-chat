@@ -9,6 +9,9 @@
 #import "MainViewController.h"
 #import "ServerTableViewController.h"
 #import "ClientTableViewController.h"
+#import "ChatViewController.h"
+#import "Chat.h"
+
 
 @interface MainViewController ()
 
@@ -50,7 +53,24 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-            
+
+
+#pragma mark - Misc
+
+- (void)startChattingWithBlock:(void (^)(Chat *))block
+{
+	ChatViewController *chatViewController = [[ChatViewController alloc] initWithNibName:@"ChatViewController" bundle:nil];
+	chatViewController.delegate = self;
+    
+	[self presentViewController:chatViewController animated:NO completion:^
+     {/*
+         Chat *chat = [[Chat alloc] init];
+         chatViewController.chat = chat;
+         chat.delegate = chatViewController;
+         block(chat);*/
+     }];
+}
+
               
 #pragma mark - Delloc
               

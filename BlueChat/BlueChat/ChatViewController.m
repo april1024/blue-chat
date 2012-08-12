@@ -16,6 +16,7 @@
 @implementation ChatViewController
 
 @synthesize tbl, messages, toolbar, field;
+@synthesize delegate = _delegate;
 
 //- (id)initWithStyle:(UITableViewStyle)style
 //{

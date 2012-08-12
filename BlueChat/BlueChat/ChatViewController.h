@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class ChatViewController;
+
+@protocol ChatViewControllerDelegate <NSObject>
+  
+- (void)chatViewController:(ChatViewController *)controller startChatWithSession:(GKSession *)session playerName:(NSString *)name clients:(NSArray *)clients;
+
+@end
+
+
 @interface ChatViewController : UIViewController
     <UITableViewDelegate, UITableViewDataSource>
 {
@@ -16,6 +25,9 @@
     IBOutlet UITextField *field;
     NSMutableArray *messages;
 }
+
+@property (strong, nonatomic) id <ChatViewControllerDelegate> delegate;
+
 
 @property (strong, nonatomic) UITableView *tbl;
 @property (strong, nonatomic) UIToolbar *toolbar;

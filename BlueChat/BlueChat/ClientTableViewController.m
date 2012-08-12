@@ -85,7 +85,7 @@
 		NSString *name = _server.session.displayName;
         
 		[_server stopAcceptingConnections];
-        
+     
 		[self.delegate clientTableViewController:self startChattingWithSession:_server.session playerName:name clients:_server.connectedClients];
 	}
 }

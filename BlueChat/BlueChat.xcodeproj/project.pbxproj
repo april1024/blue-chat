@@ -52,8 +52,6 @@
 		EBB6779C15CF5A170012FA1F /* navigation_02_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB6779915CF5A170012FA1F /* navigation_02_bar@2x.png */; };
 		EBB6779D15CF5A170012FA1F /* navigation_bar_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB6779A15CF5A170012FA1F /* navigation_bar_02@2x.png */; };
 		EBB6779E15CF5A170012FA1F /* navigation_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB6779B15CF5A170012FA1F /* navigation_bar@2x.png */; };
-		EBB677A215CF5C330012FA1F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB677A015CF5C330012FA1F /* TestViewController.m */; };
-		EBB677A315CF5C330012FA1F /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB677A115CF5C330012FA1F /* TestViewController.xib */; };
 		EBD5DF2D15CF5FA000909993 /* navigation_icon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD5DF2115CF5FA000909993 /* navigation_icon_01.png */; };
 		EBD5DF2E15CF5FA000909993 /* navigation_icon_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD5DF2215CF5FA000909993 /* navigation_icon_01@2x.png */; };
 		EBD5DF2F15CF5FA000909993 /* navigation_icon_02.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD5DF2315CF5FA000909993 /* navigation_icon_02.png */; };
@@ -153,9 +151,6 @@
 		EBB6779915CF5A170012FA1F /* navigation_02_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_02_bar@2x.png"; sourceTree = "<group>"; };
 		EBB6779A15CF5A170012FA1F /* navigation_bar_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_bar_02@2x.png"; sourceTree = "<group>"; };
 		EBB6779B15CF5A170012FA1F /* navigation_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_bar@2x.png"; sourceTree = "<group>"; };
-		EBB6779F15CF5C330012FA1F /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		EBB677A015CF5C330012FA1F /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		EBB677A115CF5C330012FA1F /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		EBD5DF2115CF5FA000909993 /* navigation_icon_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_icon_01.png; sourceTree = "<group>"; };
 		EBD5DF2215CF5FA000909993 /* navigation_icon_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_icon_01@2x.png"; sourceTree = "<group>"; };
 		EBD5DF2315CF5FA000909993 /* navigation_icon_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_icon_02.png; sourceTree = "<group>"; };
@@ -282,9 +277,6 @@
 				0AAA82C415C78F9700A02ED6 /* MessageTableCell.m */,
 				EBB6779615CF563C0012FA1F /* BlueChatNavigationController.h */,
 				EBB6779715CF563C0012FA1F /* BlueChatNavigationController.m */,
-				EBB6779F15CF5C330012FA1F /* TestViewController.h */,
-				EBB677A015CF5C330012FA1F /* TestViewController.m */,
-				EBB677A115CF5C330012FA1F /* TestViewController.xib */,
 				EBD5DF4A15CF60CD00909993 /* ListViewController.h */,
 				EBD5DF4B15CF60CD00909993 /* ListViewController.m */,
 				5F84EE9515D261F500FC827D /* Chat.h */,
@@ -444,7 +436,6 @@
 				EBB6779C15CF5A170012FA1F /* navigation_02_bar@2x.png in Resources */,
 				EBB6779D15CF5A170012FA1F /* navigation_bar_02@2x.png in Resources */,
 				EBB6779E15CF5A170012FA1F /* navigation_bar@2x.png in Resources */,
-				EBB677A315CF5C330012FA1F /* TestViewController.xib in Resources */,
 				EBD5DF2D15CF5FA000909993 /* navigation_icon_01.png in Resources */,
 				EBD5DF2E15CF5FA000909993 /* navigation_icon_01@2x.png in Resources */,
 				EBD5DF2F15CF5FA000909993 /* navigation_icon_02.png in Resources */,
@@ -519,7 +510,6 @@
 				EB82F3A215C7738B00FE7623 /* SettingViewController.m in Sources */,
 				0AAA82C515C78F9700A02ED6 /* MessageTableCell.m in Sources */,
 				EBB6779815CF563C0012FA1F /* BlueChatNavigationController.m in Sources */,
-				EBB677A215CF5C330012FA1F /* TestViewController.m in Sources */,
 				EBD5DF4C15CF60CD00909993 /* ListViewController.m in Sources */,
 				0A975EE615CFDD0A0071F0CF /* ClientTableViewController.m in Sources */,
 				61E53B9D15D17F0C0078A47C /* ServerTableViewController.m in Sources */,

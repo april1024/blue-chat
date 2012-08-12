@@ -122,6 +122,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Start" id="ze4-4k-igH">
                             <connections>
                                 <action selector="startAction:" destination="lFP-b1-yU5" id="2vz-uf-9hF"/>
+                                <segue destination="EPm-oH-xjV" kind="push" id="JHA-bT-9t5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -256,11 +257,10 @@
                                             <rect key="frame" x="44" y="7" width="195" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <textInputTraits key="textInputTraits"/>
-
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <connections>
                                                 <outlet property="delegate" destination="EPm-oH-xjV" id="jLF-sK-GWi"/>
                                             </connections>
-
                                         </textField>
                                     </barButtonItem>
                                     <barButtonItem title="전송" id="jxM-8x-Kqz"/>
@@ -383,8 +383,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ClientTableViewController.h"/>
             <relationships>
                 <relationship kind="action" name="close:"/>
-                <relationship kind="action" name="exitAction:"/>
-                <relationship kind="action" name="startAction:"/>
                 <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
@@ -394,10 +392,6 @@
         </class>
         <class className="MainViewController" superclassName="UITabBarController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="hostGameAction:"/>
-                <relationship kind="action" name="joinGameAction:"/>
-            </relationships>
         </class>
         <class className="ServerTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ServerTableViewController.h"/>
@@ -416,4 +410,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="tqg-DQ-nfd"/>
+    </inferredMetricsTieBreakers>
 </document>
